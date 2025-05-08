@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="dashboard-container">
-    <div class="card">
-      <h1>Dashboard</h1>
-      <p>You have successfully logged in 🎉</p>
-      <a href="index.html" class="logout-btn">Logout</a>
-    </div>
+    <h1>Welcome</h1>
+    <p>successfully logged in.</p>
+    <button class="logout-btn" onclick="logout()">Logout</button>
   </div>
+
+  <script>
+    function logout() {
+      // Redirect to login page
+      window.location.href = 'index.html';
+    }
+  </script>
 </body>
 </html>
